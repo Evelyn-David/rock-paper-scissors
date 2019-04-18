@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+    <title>Rock Paper Scrissors Game</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <!-- rounds -->
+        <h1 class="rounds">Round <span id="round">1</span></h1>
+
+        <!-- scoreboard -->
+        <div class="row" id="scoreboard">
+
+            <!-- player 1 wins -->
+            <div class="col-sm-4 col-xs-4">
+                <h2>Player 1 Wins</h2>
+                <h3 id="p1-score">0</h3>
+            </div>
+
+            <!-- ties -->
+            <div class="col-sm-4 col-xs-4">
+                <h2>Ties</h2>
+                <h3 id="tie-score">0</h3>
+            </div>
+
+            <!-- player 2 wins -->
+            <div class="col-sm-4 col-xs-4">
+                <h2>Computer Wins</h2>
+                <h3 id="p2-score">0</h3>
+            </div>
+        </div>
+
+        <!-- display selections -->
+        <div class="row" id="selections">
+
+            <!-- player 1 -->
+            <div class="col-xs-4 col-sm-4" id="p1-selection">
+                <img src="img/q-mark.png" alt="question-mark" id="p1-img">
+            </div>
+
+            <!-- result -->
+            <div class="col-xs-4 col-sm-4">
+                <h2 id="result">Start!</h2>
+            </div>
+
+            <!-- computer -->
+            <div class="col-xs-4 col-sm-4" id="p2-selection">
+                <img src="img/q-mark.png" alt="question-mark" id="p2-img">
+            </div>
+
+        </div>
+
+        <!-- user options -->
+        <div class="row" id="user">
+
+            <div class="col-xs-4 col-sm-4" id="options">
+                <div class="col-sm-4 rock option" id="1">
+                    <img src="https://img.icons8.com/color/48/000000/rock.png" id="rock">
+                </div>
+                <div class="col-sm-4 paper option" id="2">
+                    <img src="https://img.icons8.com/doodle/48/000000/file.png" id="paper">
+                </div>
+                <div class="col-sm-4 scissor option" id="3">
+                    <img src="https://img.icons8.com/color/48/000000/sewing-scissors.png" id="scissor">
+                </div>
+            </div>
+
+            <div class="col-xs-4">
+            </div>
+
+            <div class="col-xs-4" id="reset">
+                <h2 id="reset_btn">Reset</h2>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+</body>
+</html>
