@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 6rem 4rem 10rem;
+    line-height: 1.7;
+    font-family: "Nunito Sans", sans-serif;
+    color: #555;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #FCCB1A, #F7F0D4);
+}
+
+h1 {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-size: 6rem;
+    color: white;
+    transform: skewY(-5deg);
+    margin-bottom: 6rem;
+    text-align: center;
+    position: relative;
+    word-spacing: 3px;
+}
+
+h1::before {
+    content: '';
+    display: block;
+    height: 65%;
+    width: 58%;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    background: linear-gradient(to bottom, #FCCB1A, #F7F0D4);
+    opacity: .8;
+    z-index: -1;
+    transform: skewY(370deg) translate(-50%, -50%);
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* scoreboard ================================================== */
+#scoreboard{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#scoreboard h2{
+    font-family: Josefin Sans,sans-serif;
+    font-weight: 600;
+}
+
+#scoreboard h3{
+    font-family: Josefin Sans,sans-serif;
+    /* font-weight: 600; */
+}
+
+/* selections ================================================== */
+#selections #p1-selection, #p2-selection, #result{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* options and reset ================================================== */
+#user {
+    margin-top: 50px;
+}
+
+#options{
+    padding-top: 15px;
+}
+#options .col-sm-4{
+    display: flex;
+    justify-content: center;
+}
+#options img:hover{
+    border-radius: 100%;
+    border: #2B3409 solid 1px;
+    transition: 1s;
+}
+
+#reset h2{
+    text-align: center;
+    background-color: #2B3409;
+    color: #F7F0D4;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#reset h2:hover{
+    background-color: #F7F0D4;
+    color: #2B3409;
+    border: #2B3409 solid 1px;
+    transition: 0.5s;
+}
